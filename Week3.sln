@@ -3,22 +3,28 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31729.503
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArrayReview", "ArrayReview\ArrayReview.csproj", "{F2ED505E-2CFA-4D40-9C82-FE49AC12567A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ArrayReview", "ArrayReview\ArrayReview.csproj", "{F2ED505E-2CFA-4D40-9C82-FE49AC12567A}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{F81291AD-226A-4591-8093-36909C050FDA}"
 	ProjectSection(SolutionItems) = preProject
 		.gitignore = .gitignore
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ListReview", "ListReview\ListReview.csproj", "{4EA92142-CC5A-47DE-947E-829DAD095800}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ListReview", "ListReview\ListReview.csproj", "{4EA92142-CC5A-47DE-947E-829DAD095800}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TryCatchReview", "TryCatchReview\TryCatchReview.csproj", "{D6C86CD6-62FF-41DF-B1C5-EF3DA2CEB157}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TryCatchReview", "TryCatchReview\TryCatchReview.csproj", "{D6C86CD6-62FF-41DF-B1C5-EF3DA2CEB157}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StackDemo", "StackDemo\StackDemo.csproj", "{0E8CC1C0-7A28-4EDF-8EC9-C3DBE462FCC3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StackDemo", "StackDemo\StackDemo.csproj", "{0E8CC1C0-7A28-4EDF-8EC9-C3DBE462FCC3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QueueDemo", "QueueDemo\QueueDemo.csproj", "{FF3F6D5D-2B4F-4350-AAB4-0BDB51D3615F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QueueDemo", "QueueDemo\QueueDemo.csproj", "{FF3F6D5D-2B4F-4350-AAB4-0BDB51D3615F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkedThruMockAssess", "WorkedThruMockAssess\WorkedThruMockAssess.csproj", "{68A86934-A50C-4CEE-B8F0-A2790616863F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WorkedThruMockAssess", "WorkedThruMockAssess\WorkedThruMockAssess.csproj", "{68A86934-A50C-4CEE-B8F0-A2790616863F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClassDemo", "ClassDemo\ClassDemo.csproj", "{DE45CA51-E5AE-4007-B12F-3EFD7894C9DA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AssessmentPractice", "AssessmentPractice\AssessmentPractice.csproj", "{56B2BD82-557E-41B4-A7F0-69B39D912F45}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieDabLab", "MovieDabLab\MovieDabLab.csproj", "{F0300960-56A1-472E-B8B0-D18830C72505}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -50,6 +56,18 @@ Global
 		{68A86934-A50C-4CEE-B8F0-A2790616863F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{68A86934-A50C-4CEE-B8F0-A2790616863F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{68A86934-A50C-4CEE-B8F0-A2790616863F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DE45CA51-E5AE-4007-B12F-3EFD7894C9DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE45CA51-E5AE-4007-B12F-3EFD7894C9DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE45CA51-E5AE-4007-B12F-3EFD7894C9DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE45CA51-E5AE-4007-B12F-3EFD7894C9DA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{56B2BD82-557E-41B4-A7F0-69B39D912F45}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56B2BD82-557E-41B4-A7F0-69B39D912F45}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56B2BD82-557E-41B4-A7F0-69B39D912F45}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56B2BD82-557E-41B4-A7F0-69B39D912F45}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F0300960-56A1-472E-B8B0-D18830C72505}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F0300960-56A1-472E-B8B0-D18830C72505}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F0300960-56A1-472E-B8B0-D18830C72505}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F0300960-56A1-472E-B8B0-D18830C72505}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
