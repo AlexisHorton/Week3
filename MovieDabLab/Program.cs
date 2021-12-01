@@ -8,11 +8,13 @@ namespace MovieDabLab
     {
         private string Title;
         private string Category;
+        public int Year;
 
-        public Movies(string title, string category)
+        public Movies(string title, string category, int year)
         {
             Title = title;
             Category = category;
+            Year = year;
         }
 
         public string GetCategory()
@@ -50,16 +52,16 @@ namespace MovieDabLab
         {
             Console.WriteLine("Welcome to the Movie List Application!");
 
-            Movies Twilight = new Movies("Twilight", "Romance");
-            Movies WarmBodies = new Movies("Warm Bodies", "Scifi");
-            Movies LoveJones = new Movies("Love Jones", "Romance");
-            Movies GirlsTrip = new Movies("Girl's Trip", "Comedy");
-            Movies Avatar = new Movies("Avatar", "Scifi");
-            Movies Soul = new Movies("Soul", "Animated");
-            Movies DJango = new Movies("DJango", "Drama");
-            Movies TheVillage = new Movies("The Village", "Drama");
-            Movies TheIncredibles = new Movies("The Incredibles", "Animated");
-            Movies BAPS = new Movies("BAPS", "Comedy");
+            Movies Twilight = new Movies("Twilight", "Romance", 2008);
+            Movies WarmBodies = new Movies("Warm Bodies", "Scifi", 2012);
+            Movies LoveJones = new Movies("Love Jones", "Romance", 1994);
+            Movies GirlsTrip = new Movies("Girl's Trip", "Comedy", 2017);
+            Movies Avatar = new Movies("Avatar", "Scifi", 2012);
+            Movies Soul = new Movies("Soul", "Animated", 2020);
+            Movies DJango = new Movies("DJango", "Drama", 2017);
+            Movies TheVillage = new Movies("The Village", "Drama", 2013);
+            Movies TheIncredibles = new Movies("The Incredibles", "Animated", 2010);
+            Movies BAPS = new Movies("BAPS", "Comedy", 1996);
 
 
             List<Movies> MovieList = new List<Movies>();
@@ -76,62 +78,63 @@ namespace MovieDabLab
 
             do
             {
-                Console.WriteLine("Pick the movie category you'd like to view: \n1.Scifi    2. Romance  3.Comedy   4.Drama  5.Animated :");
+                Console.WriteLine("\nChoose the number of the movie category you'd like to view: \n[1] Scifi    [2] Romance  [3] Comedy   [4] Drama  [5] Animated :");
                 string entry = Console.ReadLine().ToLower();
-                Console.WriteLine($"You chose {entry}");
+                int numChoice = int.Parse(entry);
+                Console.WriteLine($"You chose option {entry}");
 
-                if (entry == "scifi")
+                if (numChoice == 1)
                 {
-                    Console.WriteLine("This category contains these films:\n");
+                    Console.WriteLine("\nThis category contains the following films:\n");
                     foreach (Movies movie in MovieList)
                     {
-                        if (movie.GetCategory().ToLower() == entry)
+                        if (movie.GetCategory().ToLower() == "scifi")
                         {
-                            Console.WriteLine(movie.GetTitle());
+                            Console.WriteLine(movie.GetTitle() + "-" + movie.Year);
                         }
                     }
                 }
-                else if (entry == "romance")
+                else if (numChoice == 2)
                 {
-                    Console.WriteLine("This category contains these films:\n");
+                    Console.WriteLine("This category contains the following films:\n");
                     foreach (Movies movie in MovieList)
                     {
-                        if (movie.GetCategory().ToLower() == entry)
+                        if (movie.GetCategory().ToLower() == "romance")
                         {
-                            Console.WriteLine(movie.GetTitle());
+                            Console.WriteLine(movie.GetTitle() + "-" + movie.Year);
                         }
                     }
                 }
-                else if (entry == "comedy")
+                else if (numChoice == 3)
                 {
-                    Console.WriteLine("This category contains these films:\n");
+                    Console.WriteLine("This category contains the following films:\n");
                     foreach (Movies movie in MovieList)
                     {
-                        if (movie.GetCategory().ToLower() == entry)
+                        if (movie.GetCategory().ToLower() == "comedy")
                         {
-                            Console.WriteLine(movie.GetTitle());
+                            Console.WriteLine(movie.GetTitle() + "-" + movie.Year);
                         }
                     }
                 }
-                else if (entry == "drama")
+                else if (numChoice == 4)
                 {
-                    Console.WriteLine("This category contains these films:\n");
+                    Console.WriteLine("This category contains the following films:\n");
                     foreach (Movies movie in MovieList)
                     {
-                        if (movie.GetCategory().ToLower() == entry)
+                        if (movie.GetCategory().ToLower() == "drama")
                         {
-                            Console.WriteLine(movie.GetTitle());
+                            Console.WriteLine(movie.GetTitle() + "-" + movie.Year);
                         }
                     }
                 }
-                else if (entry == "animated")
+                else if (numChoice == 5)
                 {
-                    Console.WriteLine("This category contains these films:\n");
+                    Console.WriteLine("This category contains the following films:\n");
                     foreach (Movies movie in MovieList)
                     {
-                        if (movie.GetCategory().ToLower() == entry)
+                        if (movie.GetCategory().ToLower() == "animated")
                         {
-                            Console.WriteLine(movie.GetTitle());
+                            Console.WriteLine(movie.GetTitle() + "-" + movie.Year);
                         }
                     }
                 }
