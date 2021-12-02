@@ -8,7 +8,7 @@ namespace MovieDabLab
     {
         private string Title;
         private string Category;
-        public int Year;
+        private int Year;
 
         public Movies(string title, string category, int year)
         {
@@ -25,6 +25,11 @@ namespace MovieDabLab
         public string GetTitle()
         {
             return Title;
+        }
+
+        public int GetYear()
+        {
+            return Year;
         }
     }
 
@@ -52,29 +57,18 @@ namespace MovieDabLab
         {
             Console.WriteLine("Welcome to the Movie List Application!");
 
-            Movies Twilight = new Movies("Twilight", "Romance", 2008);
-            Movies WarmBodies = new Movies("Warm Bodies", "Scifi", 2012);
-            Movies LoveJones = new Movies("Love Jones", "Romance", 1997);
-            Movies GirlsTrip = new Movies("Girl's Trip", "Comedy", 2017);
-            Movies Avatar = new Movies("Avatar", "Scifi", 2009);
-            Movies Soul = new Movies("Soul", "Animated", 2020);
-            Movies DJango = new Movies("DJango", "Drama", 2012);
-            Movies TheVillage = new Movies("The Village", "Drama", 2004);
-            Movies TheIncredibles = new Movies("The Incredibles", "Animated", 2005);
-            Movies BAPS = new Movies("BAPS", "Comedy", 1994);
-
 
             List<Movies> MovieList = new List<Movies>();
-            MovieList.Add(Twilight);
-            MovieList.Add(WarmBodies);
-            MovieList.Add(LoveJones);
-            MovieList.Add(GirlsTrip);
-            MovieList.Add(Avatar);
-            MovieList.Add(Soul);
-            MovieList.Add(DJango);
-            MovieList.Add(TheVillage);
-            MovieList.Add(TheIncredibles);
-            MovieList.Add(BAPS);
+            MovieList.Add(new Movies("Twilight", "Romance", 2008));
+            MovieList.Add(new Movies("Warm Bodies", "Scifi", 2012));
+            MovieList.Add(new Movies("Love Jones", "Romance", 1997));
+            MovieList.Add(new Movies("Girl's Trip", "Comedy", 2017));
+            MovieList.Add(new Movies("Avatar", "Scifi", 2009));
+            MovieList.Add(new Movies("Soul", "Animated", 2020));
+            MovieList.Add(new Movies("DJango", "Drama", 2012));
+            MovieList.Add(new Movies("The Village", "Drama", 2004));
+            MovieList.Add(new Movies("The Incredibles", "Animated", 2005));
+            MovieList.Add(new Movies("BAPS", "Comedy", 1994));
 
             do
             {
@@ -90,7 +84,7 @@ namespace MovieDabLab
                     {
                         if (movie.GetCategory().ToLower() == "scifi")
                         {
-                            Console.WriteLine(movie.GetTitle() + "-" + movie.Year);
+                            Console.WriteLine(movie.GetTitle() + "-" + movie.GetYear());
                         }
                     }
                 }
@@ -101,7 +95,7 @@ namespace MovieDabLab
                     {
                         if (movie.GetCategory().ToLower() == "romance")
                         {
-                            Console.WriteLine(movie.GetTitle() + "-" + movie.Year);
+                            Console.WriteLine(movie.GetTitle() + "-" + movie.GetYear());
                         }
                     }
                 }
@@ -112,7 +106,7 @@ namespace MovieDabLab
                     {
                         if (movie.GetCategory().ToLower() == "comedy")
                         {
-                            Console.WriteLine(movie.GetTitle() + "-" + movie.Year);
+                            Console.WriteLine(movie.GetTitle() + "-" + movie.GetYear());
                         }
                     }
                 }
@@ -123,7 +117,7 @@ namespace MovieDabLab
                     {
                         if (movie.GetCategory().ToLower() == "drama")
                         {
-                            Console.WriteLine(movie.GetTitle() + "-" + movie.Year);
+                            Console.WriteLine(movie.GetTitle() + "-" + movie.GetYear());
                         }
                     }
                 }
@@ -134,7 +128,7 @@ namespace MovieDabLab
                     {
                         if (movie.GetCategory().ToLower() == "animated")
                         {
-                            Console.WriteLine(movie.GetTitle() + "-" + movie.Year);
+                            Console.WriteLine(movie.GetTitle() + "-" + movie.GetYear());
                         }
                     }
                 }
@@ -142,7 +136,7 @@ namespace MovieDabLab
                 {
                     Console.WriteLine("Sorry! That's not one of the categories. Please try again.");
                 }
-            } while (GoAgain("Would you like to continue? Y/N :"));
+            } while (GoAgain("\nWould you like to continue? Y/N :"));
 
             Console.WriteLine("Thanks for exploring! See you next time!");
         }
