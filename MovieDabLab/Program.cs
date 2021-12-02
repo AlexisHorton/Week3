@@ -54,14 +54,14 @@ namespace MovieDabLab
 
             Movies Twilight = new Movies("Twilight", "Romance", 2008);
             Movies WarmBodies = new Movies("Warm Bodies", "Scifi", 2012);
-            Movies LoveJones = new Movies("Love Jones", "Romance", 1994);
+            Movies LoveJones = new Movies("Love Jones", "Romance", 1997);
             Movies GirlsTrip = new Movies("Girl's Trip", "Comedy", 2017);
-            Movies Avatar = new Movies("Avatar", "Scifi", 2012);
+            Movies Avatar = new Movies("Avatar", "Scifi", 2009);
             Movies Soul = new Movies("Soul", "Animated", 2020);
-            Movies DJango = new Movies("DJango", "Drama", 2017);
-            Movies TheVillage = new Movies("The Village", "Drama", 2013);
-            Movies TheIncredibles = new Movies("The Incredibles", "Animated", 2010);
-            Movies BAPS = new Movies("BAPS", "Comedy", 1996);
+            Movies DJango = new Movies("DJango", "Drama", 2012);
+            Movies TheVillage = new Movies("The Village", "Drama", 2004);
+            Movies TheIncredibles = new Movies("The Incredibles", "Animated", 2005);
+            Movies BAPS = new Movies("BAPS", "Comedy", 1994);
 
 
             List<Movies> MovieList = new List<Movies>();
