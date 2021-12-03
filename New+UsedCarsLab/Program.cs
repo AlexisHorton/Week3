@@ -111,6 +111,10 @@ namespace New_UsedCarsLab
             }
 
             Car.ListCars();
+
+            Console.WriteLine("Super!! Our finance department will be in touch shortly.");
+            
+            Console.WriteLine("Have a great day!");
         }
     }
 }
