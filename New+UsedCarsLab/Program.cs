@@ -100,15 +100,11 @@ namespace New_UsedCarsLab
             string entry = Console.ReadLine();
             int remove = int.Parse(entry);
 
+            Console.WriteLine($"You chose this car: {Car.CarList[remove-1]}");
+
             Car.Remove(remove);
 
-            for (int i = 0; i < Car.CarList.Count; i++)
-            {
-                if (i == remove)
-                {
-                    Console.WriteLine($"You chose: {Car.CarList[i]}.");
-                }
-            }
+
 
             Car.ListCars();
 
